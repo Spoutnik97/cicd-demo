@@ -8,7 +8,7 @@ jobs:
     uses: melodium-tech/github-actions/.github/workflows/melodium-local-distrib.yml@v0.10.0
     with:
       command: |
-        run --api-report --logs output/logs.log Compo.toml --repository_clone_url '${{ github.repositoryUrl }}' --repository_clone_ref '${{ github.ref_name }}'
+        run --api-report --logs output/logs.log Compo.toml advanced --repository_clone_url '${{ github.repositoryUrl }}' --repository_clone_ref '${{ github.ref_name }}'
       artifact-path: 'output/'
     secrets:
       github-token: ${{ secrets.GITHUB_TOKEN }}

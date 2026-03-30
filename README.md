@@ -4,7 +4,10 @@ This is demonstration code for basic CI/CD.
 
 ## Execute
 
-Install `melodium` command: https://melodium.tech/en/download
+Install `melodium`
+
+
+command: https://melodium.tech/en/download
 
 `melodium run --api-report ./Compo.toml advanced --repository_clone_url "$CI_REPOSITORY_URL" --repository_clone_ref "$CI_COMMIT_REF_NAME"`
 
